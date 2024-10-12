@@ -1,0 +1,162 @@
+license-key: 'here'
+
+settings:
+  # Avoid the delay with the permission: 'home.teleport.instant'
+  delay-to-teleport-in-seconds: 3
+
+home-permissions:
+  1: 'home.teleport.1'
+  2: 'home.teleport.2'
+  3: 'home.teleport.3'
+  4: 'home.teleport.4'
+  5: 'home.teleport.5'
+
+
+confirm-home-delete-inventory:
+
+  name: 'Confirm Delete'
+  rows: 3
+
+  icons:
+
+    home:
+      slot: 13
+      material: BLUE_DYE
+      name: '#397ff7ʜᴏᴍᴇ %index%'
+
+    decline:
+      slot: 11
+      material: RED_STAINED_GLASS_PANE
+      name: '#e00202ᴄᴀɴᴄᴇʟ'
+      lore:
+        - '§fClick to cancel'
+
+    accept:
+      slot: 15
+      material: LIME_STAINED_GLASS_PANE
+      name: '#02de4fᴄᴏɴғɪʀᴍ'
+      lore:
+        - '§fClick to delete'
+
+
+list-player-homes-inventory:
+
+  name: 'ʜᴏᴍᴇs'
+
+  layout:
+    - 'XXXXXXXXX'
+    - 'XXXOOOOOX'
+    - 'XX<XXXXX>'
+    - 'XXXXXXXXX'
+
+  team-home-dye-slot: 19
+  team-home-slot: 10
+
+  dye-slots:
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+  home-slots:
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+
+  icons:
+
+    indexed-home:
+      material: 'BLUE_BED'
+      name: '#397ff7ʜᴏᴍᴇ %index%'
+      lore:
+        - '§fClick to teleport to your home'
+
+    dye-home:
+      material: 'BLUE_DYE'
+      name: '#397ff7ʜᴏᴍᴇ %index%'
+      lore:
+        - '§fClick to delete this home'
+
+    no-home-set:
+      material: 'LIGHT_GRAY_BED'
+      name: '§7ɴᴏ ʜᴏᴍᴇ sᴇᴛ'
+      lore:
+        - '§fClick to create a home'
+
+    no-home-dye:
+      material: 'GRAY_DYE'
+      name: '§7ɴᴏ ʜᴏᴍᴇ sᴇᴛ'
+      lore:
+        - '§fClick to create a home'
+
+    no-permission-home:
+      material: 'RED_BED'
+      name: '#e00202ɴᴏ ᴘᴇʀᴍɪssɪᴏɴ'
+      lore:
+        - '§fYou need a higher rank for this home'
+
+    no-permission-dye:
+      material: 'RED_DYE'
+      name: '#e00202ɴᴏ ᴘᴇʀᴍɪssɪᴏɴ'
+      lore:
+        - '§fYou need a higher rank for this home'
+
+    no-team-home:
+      material: 'RED_BANNER'
+      name: '#e00202ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fYou don''t have a team.'
+
+    no-team-home-dye:
+      material: 'GRAY_DYE'
+      name: '#e00202ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fClick to create a team home.'
+
+    team-no-home:
+      material: 'WHITE_BANNER'
+      name: '#e00202ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fClick to create a team home.'
+
+    team-no-home-dye:
+      material: 'GRAY_DYE'
+      name: '#e00202ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fClick to create a team home.'
+
+    team-home:
+      material: 'WHITE_BANNER'
+      name: '#397ff7ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fClick to teleport to your team''s home'
+
+    team-home-dye:
+      material: 'BLUE_DYE'
+      name: '#397ff7ᴛᴇᴀᴍ ʜᴏᴍᴇ'
+      lore:
+        - '§fClick to teleport to your team''s home'
+
+    next-page:
+      material: 'GREEN_DYE'
+      name: '§aNext Page'
+
+    previous-page:
+      material: 'RED_DYE'
+      name: '§aPrevious Page'
+
+
+messages:
+  move-cancel-teleport: '§cThe teleport was cancelled because you moved.'
+  teleport-success: '§7You teleported to your home'
+  teleporting: '§7Teleporting in §b%seconds% §7seconds'
+  home-reached-limit: '§cYou reached home limits.'
+  set-home-block-region: '§cYou cannot set homes on this region.'
+  invalid-index: '§cInvalid index.'
+  home-set: '§7Home set.'
+  home-not-exist: '§cThis home does not exist.'
+  home-deleted: '§7Home deleted.'
+  home-not-found: '§cHome not found.'
+  home-confirm: '§cWait 1 seconds before confirming this, are you sure this is not a mistake?'

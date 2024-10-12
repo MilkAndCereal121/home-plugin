@@ -1,0 +1,10 @@
+name: DonutHomes
+main: net.luxcube.minecraft.HomePlugin
+version: 0.0.1-SNAPSHOT
+api-version: 1.20
+depend:
+  - WorldGuard
+softdepend:
+  - DonutTeams
+authors:
+  - Milk_And_Cereal
